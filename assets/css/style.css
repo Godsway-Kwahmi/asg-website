@@ -1,0 +1,108 @@
+/* To pin Helvetica Neue on every platform (Light exists natively only on Apple devices),
+   add licensed files and uncomment, then put "ASG Helvetica" first in --font:
+@font-face{font-family:"ASG Helvetica";font-weight:300;src:local("HelveticaNeue-Light"),url("fonts/HelveticaNeue-Light.woff2") format("woff2")}
+@font-face{font-family:"ASG Helvetica";font-weight:400;src:local("HelveticaNeue"),url("fonts/HelveticaNeue-Roman.woff2") format("woff2")}
+@font-face{font-family:"ASG Helvetica";font-weight:700;src:local("HelveticaNeue-Bold"),url("fonts/HelveticaNeue-Bold.woff2") format("woff2")}
+*/
+:root{
+  --bright:#ee3712; --rust:#bc3013; --peach:#f59b6b; --bg:#f2f2f2; --tile:#808080;
+  --font:"Helvetica Neue","HelveticaNeue",Helvetica,"Nimbus Sans","Liberation Sans",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#fff}
+body{overflow-x:hidden;font-family:var(--font);font-weight:300;color:#fff;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+a{color:inherit;text-decoration:none}
+b,strong{font-weight:700}
+button{background:none;border:0;color:inherit;font-family:inherit;font-weight:inherit;cursor:pointer}
+:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+header,section,footer,nav,form{display:contents}
+
+/* 1920 x 4256 artboard; every element sits at its design coordinate and the whole page scales with the viewport */
+.page{position:relative;width:1920px;height:4256px;overflow:hidden;transform-origin:0 0;zoom:calc(100vw/1920px)}
+.b,.t,.pg,.logo,.sep,.q,.in,.ta,.svg{position:absolute}
+.t{white-space:nowrap;letter-spacing:-.03em}
+.sep{width:1px;height:18px;background:#f0a48c}
+.sep.w{background:rgba(255,255,255,.75);height:14px}
+.sep.r{background:#f28a6a;height:14px}
+
+/* type scale read from the boards */
+.h{font-size:52px;line-height:60px;letter-spacing:-.04em}      /* section headings */
+.hero{font-size:41px;line-height:56px;letter-spacing:-.025em}  /* hero statement */
+.k{font-size:32px;line-height:38px}                            /* sub-heads */
+.m{font-size:36px;line-height:44px}                            /* CPD title */
+.s{font-size:25px;line-height:30px}                            /* panel labels, More + */
+.p{font-size:19px;line-height:26px}                            /* body copy */
+.u{font-size:19px;line-height:24px}                            /* nav, forms, legal */
+.nav{color:#9c9c9c;font-weight:400}
+.more{transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.more:hover{transform:translateX(5px)}
+a:hover{opacity:.75}
+
+/* logo: three squares plus wordmark, one component used top and bottom */
+.logo{width:173px;height:168px;--c:var(--bright);--tx:var(--bright);--pl:var(--bright)}
+.logo i{position:absolute;display:block;background:var(--c)}
+.logo .a{left:56px;top:0;width:37px;height:37px}
+.logo .l{left:0;top:37px;width:56px;height:56px}
+.logo .c{left:56px;top:93px;width:75px;height:75px}
+.logo span{position:absolute;white-space:nowrap;font-size:10.5px;line-height:15px;letter-spacing:-.05em;color:var(--tx)}
+.logo .w1,.logo .w2{font-weight:700}
+.logo .pl{left:159px;top:76px;width:14px;height:14px}
+.logo .pl:before,.logo .pl:after{content:"";position:absolute;background:var(--pl)}
+.logo .pl:before{left:0;top:6.5px;width:14px;height:1px}
+.logo .pl:after{left:6.5px;top:0;width:1px;height:14px}
+.logo.inv{--c:#fff;--tx:#fff;--pl:rgba(255,255,255,.4)}
+
+/* pagination 1 2 3 4 5 + + */
+.pg{width:130px;height:28px;font-size:28px;line-height:28px;letter-spacing:0}
+.pg span{position:absolute;top:0}
+.pg span:nth-child(1){left:0}.pg span:nth-child(2){left:14px}.pg span:nth-child(3){left:33px}
+.pg span:nth-child(4){left:51px}.pg span:nth-child(5){left:71px}.pg span:nth-child(6){left:93px}
+.pg span:nth-child(7){left:110px}
+.pg .on{font-weight:700}
+
+.q{width:226px;height:24px;border:0;border-bottom:1px solid #d2d2d2;background:transparent;outline:0;font:inherit;color:#777}
+.in,.ta{border:0;border-radius:0;background:#fff;color:#444;font-family:inherit;font-size:16px;padding:0 8px;outline:0}
+.in{height:21px}
+.ta{padding:8px;resize:none}
+.fl{position:absolute;display:flex;flex-direction:column;font-size:19px;line-height:27px;font-weight:400;letter-spacing:-.03em;white-space:nowrap}
+
+/* ===== inner pages (shared header, content, footer) ===== */
+.wr{white-space:normal}
+.page.sub{height:auto}
+.sub .hd,.sub .ft{display:block;position:relative}
+.sub .hd{height:340px;background:var(--bg)}
+.sub .ft{height:356px}
+.nv,.ac{position:absolute;top:91px;display:flex;align-items:center;gap:9px}
+.nv{left:717px}.ac{left:1293px;top:90px}
+.nv a,.ac a{font-size:19px;line-height:24px;letter-spacing:-.03em;font-weight:400;color:#9c9c9c;white-space:nowrap}
+.nv a[aria-current]{color:var(--bright)}
+.nv .sep,.ac .sep{position:static;flex:none}
+.ac .q{position:static;margin-right:4px}
+.sub .hd .pn{color:#4a2313}
+.mn{display:block;width:1920px;padding:96px 278px 0;color:#6e6e6e}
+.mn h2{font-size:52px;line-height:60px;letter-spacing:-.04em;font-weight:300;color:#929292;margin-bottom:12px}
+.mn h3{font-size:32px;line-height:38px;letter-spacing:-.03em;font-weight:700;color:#7c7c7c;margin-bottom:10px}
+.mn p{font-size:19px;line-height:28px;letter-spacing:-.02em;max-width:700px;margin-bottom:16px}
+.mn a{color:var(--bright);font-weight:400;text-decoration:underline;text-underline-offset:4px}
+.rl{display:block;width:842px;height:2px;background:var(--bright);margin:0 0 36px}
+.sc{margin-bottom:96px}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);margin-bottom:96px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:96px;margin-bottom:96px}
+.card{padding:32px;min-height:260px;background:var(--peach);color:#4a2313}
+.card.r{background:var(--rust);color:#fff}.card.g{background:var(--tile);color:#fff}
+.mn .card h3,.mn .card p,.mn .card a,.mn .bd h2,.mn .bd h3,.mn .bd p,.mn .bd a{color:inherit}
+.bd{margin:0 -278px 96px;padding:56px 278px;background:var(--rust);color:#fff}
+.mn .bd h2{color:#fff}
+.tile{min-height:199px;padding:20px;background:var(--tile);color:#fff;font-size:25px;line-height:24px;font-weight:700;letter-spacing:-.03em;display:flex;align-items:flex-end}
+.mn ol{padding-left:28px;max-width:700px}
+.mn li{font-size:19px;line-height:28px;margin-bottom:14px}
+details{max-width:700px;border-bottom:1px solid #d2d2d2;padding:16px 0}
+summary{font-size:22px;font-weight:700;color:#7c7c7c;cursor:pointer}
+details p{margin:12px 0 0}
+.fm{display:grid;gap:8px;max-width:560px}
+.fm label{font-size:19px;color:#7c7c7c}
+.fm input,.fm textarea{border:0;border-bottom:1px solid #bdbdbd;background:transparent;padding:8px 0;margin-bottom:12px;font:inherit;font-size:19px;color:#444;outline:0;border-radius:0}
+.fm textarea{height:130px;resize:none}
+.fm button{justify-self:start;background:var(--bright);color:#fff;padding:14px 32px;font-size:19px;font-weight:400}
+.res{list-style:none}.res li{margin-bottom:12px}
