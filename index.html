@@ -7,203 +7,243 @@
 <link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body data-p="home">
 <div class="page" id="page">
 
 <!-- ============ BOARD 1 ============ -->
-<header>
+<header class="hd">
   <div class="b" style="left:0;top:0;width:1920px;height:464px;background:var(--bg)"></div>
 
-  <a class="logo" href="index.html" aria-label="Architectural Society of Ghana, home" style="left:105px;top:93px">
-    <i class="a"></i><i class="l"></i><i class="c"></i>
-    <span class="w1" style="left:65px;top:41.5px">ARCHITECTURAL</span>
-    <span class="w2" style="left:65px;top:56.5px">SOCIETY</span>
-    <span style="left:122px;top:56.5px">OF</span>
-    <span style="left:65px;top:71.5px">GHANA</span>
-    <span class="pl"></span>
-  </a>
+  <div class="hbar">
+    <a class="logo" href="index.html" aria-label="Architectural Society of Ghana, home" style="left:105px;top:93px">
+      <i class="a"></i><i class="l"></i><i class="c"></i>
+      <span class="w1" style="left:65px;top:41.5px">ARCHITECTURAL</span>
+      <span class="w2" style="left:65px;top:56.5px">SOCIETY</span>
+      <span style="left:122px;top:56.5px">OF</span>
+      <span style="left:65px;top:71.5px">GHANA</span>
+      <span class="pl"></span>
+    </a>
+    <button class="mbtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mpanel"></button>
+  </div>
 
-  <nav aria-label="Main">
-    <a class="t u nav" href="about.html" style="left:717px;top:91px">About ASG</a><i class="sep" style="left:817px;top:94px"></i>
-    <a class="t u nav" href="events.html" style="left:826px;top:91px">Events</a><i class="sep" style="left:890px;top:94px"></i>
-    <a class="t u nav" href="learn.html" style="left:899px;top:91px">Learn</a><i class="sep" style="left:955px;top:94px"></i>
-    <a class="t u nav" href="contact.html" style="left:964px;top:91px">Get in touch</a><i class="sep" style="left:1069px;top:94px"></i>
-    <a class="t u nav" href="shop.html" style="left:1078px;top:91px">Shop</a>
-  </nav>
+  <div class="mpanel" id="mpanel">
+    <nav aria-label="Main">
+      <a class="t u nav" href="about.html" style="left:717px;top:91px">About ASG</a><i class="sep" style="left:817px;top:94px"></i>
+      <a class="t u nav" href="events.html" style="left:826px;top:91px">Events</a><i class="sep" style="left:890px;top:94px"></i>
+      <a class="t u nav" href="learn.html" style="left:899px;top:91px">Learn</a><i class="sep" style="left:955px;top:94px"></i>
+      <a class="t u nav" href="contact.html" style="left:964px;top:91px">Get in touch</a><i class="sep" style="left:1069px;top:94px"></i>
+      <a class="t u nav" href="shop.html" style="left:1078px;top:91px">Shop</a>
+    </nav>
 
-  <form action="search.html" role="search"><input class="q" type="search" name="q" aria-label="Search" style="left:1293px;top:90px"></form>
-  <a class="t u nav" href="search.html" style="left:1532px;top:91px;color:#8a8a8a">search</a><i class="sep" style="left:1593px;top:94px"></i>
-  <a class="t u" href="login.html" style="left:1602px;top:91px;color:#a3a3a3">log in</a><i class="sep" style="left:1652px;top:94px"></i>
-  <a class="t u" href="register.html" style="left:1665px;top:91px;color:#adadad">Register</a>
+    <form action="search.html" role="search"><input class="q" type="search" name="q" aria-label="Search" style="left:1293px;top:90px"></form>
+    <div class="ha">
+      <a class="t u nav" href="search.html" style="left:1532px;top:91px;color:#8a8a8a">search</a><i class="sep" style="left:1593px;top:94px"></i>
+      <a class="t u" href="login.html" style="left:1602px;top:91px;color:#a3a3a3">log in</a><i class="sep" style="left:1652px;top:94px"></i>
+      <a class="t u" href="register.html" style="left:1665px;top:91px;color:#adadad">Register</a>
+    </div>
+  </div>
 
-  <h1 class="t hero" style="left:278px;top:316px;color:#9a9a9a">A community of professionals moving<br>Ghanaian architecture forward.</h1>
+  <h1 class="t hero" style="left:278px;top:316px;color:#9a9a9a">A community of professionals moving <br>Ghanaian architecture forward.</h1>
 
-  <div class="b" style="left:1120px;top:137px;width:464px;height:327px;background:var(--peach)"></div>
-  <h2 class="t h" style="left:1140px;top:147px">Join Us</h2>
-  <a class="t s" href="join.html#process" style="left:1145px;top:418px">Process</a>
-  <a class="t s" href="join.html#faq" style="left:1535px;top:400px;height:44px;writing-mode:vertical-rl;transform:rotate(180deg)">FAQ</a>
+  <div class="join">
+    <div class="b" style="left:1120px;top:137px;width:464px;height:327px;background:var(--peach)"></div>
+    <h2 class="t h" style="left:1140px;top:147px">Join Us</h2>
+    <a class="t s" href="join.html#process" style="left:1145px;top:418px">Process</a>
+    <a class="t s" href="join.html#faq" style="left:1535px;top:400px;height:44px;writing-mode:vertical-rl;transform:rotate(180deg)">FAQ</a>
+  </div>
 </header>
 
-<section aria-label="Features and events">
-  <div class="b" style="left:0;top:464px;width:1367px;height:616px;background:var(--rust)"></div>
-  <h2 class="t h" style="left:278px;top:487px">Features</h2>
-  <i class="b" style="left:278px;top:553px;width:842px;height:2px;background:var(--bright)"></i>
-  <img class="svg" src="assets/img/feature-mark.svg" alt="" style="left:28px;top:722px" width="232" height="284">
-  <h3 class="t k" style="left:278px;top:892px"><b>Firm Highlight:</b> Made in Accra</h3>
-  <p class="t p" style="left:278px;top:947px">A community of professionals moving Ghanaian A community of professionals<br>moving Ghanaian architecture forward. architecture forward.&nbsp; rward. architecture<br>forward.</p>
-  <div class="pg" style="left:1162px;top:996px" aria-label="Feature 4 of 5"><span>1</span><span>2</span><span>3</span><span class="on">4</span><span>5</span><span>+</span><span>+</span></div>
+<section class="fe-row" aria-label="Features and events">
+  <div class="feat">
+    <div class="b" style="left:0;top:464px;width:1367px;height:616px;background:var(--rust)"></div>
+    <h2 class="t h" style="left:278px;top:487px">Features</h2>
+    <i class="b" style="left:278px;top:553px;width:842px;height:2px;background:var(--bright)"></i>
+    <div class="feat-body">
+      <img class="svg" src="assets/img/feature-mark.svg" alt="" style="left:28px;top:722px" width="232" height="284">
+      <h3 class="t k" style="left:278px;top:892px"><b>Firm Highlight:</b> Made in Accra</h3>
+      <p class="t p" style="left:278px;top:947px">A community of professionals moving Ghanaian A community of professionals <br>moving Ghanaian architecture forward. architecture forward.&nbsp; rward. architecture <br>forward.</p>
+      <div class="pg" style="left:1162px;top:996px" aria-label="Feature 4 of 5"><span>1</span><span>2</span><span>3</span><span class="on">4</span><span>5</span><span>+</span><span>+</span></div>
+    </div>
+  </div>
 
-  <div class="b" style="left:1367px;top:464px;width:416px;height:432px;background:var(--bright)"></div>
-  <h2 class="t h" style="left:1400px;top:487px">Events</h2>
-  <a class="t s" href="events.html#agm" style="left:1400px;top:841px">Upcoming AGM</a>
-  <a class="t s more" href="events.html" style="left:1675px;top:841px">More +</a>
+  <div class="evt">
+    <div class="b" style="left:1367px;top:464px;width:416px;height:432px;background:var(--bright)"></div>
+    <h2 class="t h" style="left:1400px;top:487px">Events</h2>
+    <div class="evt-links">
+      <a class="t s" href="events.html#agm" style="left:1400px;top:841px">Upcoming AGM</a>
+      <a class="t s more" href="events.html" style="left:1675px;top:841px">More +</a>
+    </div>
+  </div>
 
-  <a class="t u" href="https://www.youtube.com/" target="_blank" rel="noopener" style="left:1400px;top:1002px;color:var(--bright)">Youtube</a><i class="sep r" style="left:1469px;top:1007px;background:#f0a48c"></i>
-  <a class="t u" href="https://www.instagram.com/" target="_blank" rel="noopener" style="left:1478px;top:1002px;color:var(--bright)">Instagram</a><i class="sep r" style="left:1561px;top:1007px;background:#f0a48c"></i>
-  <a class="t u" href="https://www.facebook.com/" target="_blank" rel="noopener" style="left:1570px;top:1002px;color:var(--bright)">Facebook</a>
+  <div class="soc">
+    <a class="t u" href="https://www.youtube.com/" target="_blank" rel="noopener" style="left:1400px;top:1002px;color:var(--bright)">Youtube</a><i class="sep r" style="left:1469px;top:1007px;background:#f0a48c"></i>
+    <a class="t u" href="https://www.instagram.com/" target="_blank" rel="noopener" style="left:1478px;top:1002px;color:var(--bright)">Instagram</a><i class="sep r" style="left:1561px;top:1007px;background:#f0a48c"></i>
+    <a class="t u" href="https://www.facebook.com/" target="_blank" rel="noopener" style="left:1570px;top:1002px;color:var(--bright)">Facebook</a>
+  </div>
 </section>
 
 <!-- ============ BOARD 2 ============ -->
-<section aria-label="ASG Job Board">
+<section class="jobs-sec" aria-label="ASG Job Board">
   <h2 class="t h" style="left:278px;top:1095px;color:#929292">ASG Job Board</h2>
 
-  <h3 class="t k" style="left:278px;top:1179px"><span style="color:#969696">GY Studio</span></h3>
-  <h3 class="t k" style="left:429px;top:1179px;color:#7c7c7c"><b>Senior Architect</b></h3>
-  <p class="t p" style="left:278px;top:1224px;color:#b5b5b5">A community of professionals moving Ghanaian A community<br>of professionals moving Ghanaian architecture forward.<br>architecture forward architecture forward.</p>
-  <a class="t s more" href="jobs.html" style="left:279px;top:1319px;color:#1e1e1e">More +</a>
-  <a class="t s" href="jobs.html" style="left:279px;top:1358px;color:#111"><b>More Job Posts</b></a>
+  <div class="jobs">
+    <div class="job">
+      <h3 class="t k" style="left:278px;top:1179px"><span id="hp-job-0-company" style="color:#969696">GY Studio</span></h3>
+      <h3 class="t k" style="left:429px;top:1179px;color:#7c7c7c"><b id="hp-job-0-title">Senior Architect</b></h3>
+      <p class="t p" id="hp-job-0-desc" style="left:278px;top:1224px;color:#b5b5b5">A community of professionals moving Ghanaian A community <br>of professionals moving Ghanaian architecture forward. <br>architecture forward architecture forward.</p>
+      <a class="t s more" href="jobs.html" style="left:279px;top:1319px;color:#1e1e1e">More +</a>
+    </div>
+    <div class="job">
+      <h3 class="t k" style="left:796px;top:1179px"><span id="hp-job-1-company" style="color:#969696">Made In Accra</span></h3>
+      <h3 class="t k" style="left:1003px;top:1179px;color:#7c7c7c"><b id="hp-job-1-title">3D Visualizer</b></h3>
+      <p class="t p" id="hp-job-1-desc" style="left:796px;top:1224px;color:#b5b5b5">A community of professionals moving Ghanaian A community <br>of professionals moving Ghanaian architecture forward. <br>architecture forward architecture forward.</p>
+      <a class="t s more" href="jobs.html" style="left:796px;top:1319px;color:#1e1e1e">More +</a>
+    </div>
+    <div class="job">
+      <h3 class="t k" style="left:1310px;top:1179px"><span id="hp-job-2-company" style="color:#969696">Made In Accra</span></h3>
+      <h3 class="t k" style="left:1517px;top:1179px;color:#7c7c7c"><b id="hp-job-2-title">Architect</b></h3>
+      <p class="t p" id="hp-job-2-desc" style="left:1310px;top:1224px;color:#b5b5b5">A community of professionals moving Ghanaian A community <br>of professionals moving Ghanaian architecture forward. <br>architecture forward architecture forward.</p>
+      <a class="t s more" href="jobs.html" style="left:1313px;top:1319px;color:#1e1e1e">More +</a>
+    </div>
+  </div>
+
+  <a class="t s jobs-all" href="jobs.html" style="left:279px;top:1358px;color:#111"><b>More Job Posts</b></a>
   <i class="b" style="left:276px;top:1399px;width:479px;height:2px;background:var(--bright)"></i>
-
-  <h3 class="t k" style="left:796px;top:1179px"><span style="color:#969696">Made In Accra</span></h3>
-  <h3 class="t k" style="left:1003px;top:1179px;color:#7c7c7c"><b>3D Visualizer</b></h3>
-  <p class="t p" style="left:796px;top:1224px;color:#b5b5b5">A community of professionals moving Ghanaian A community<br>of professionals moving Ghanaian architecture forward.<br>architecture forward architecture forward.</p>
-  <a class="t s more" href="jobs.html" style="left:796px;top:1319px;color:#1e1e1e">More +</a>
-
-  <h3 class="t k" style="left:1310px;top:1179px"><span style="color:#969696">Made In Accra</span></h3>
-  <h3 class="t k" style="left:1517px;top:1179px;color:#7c7c7c"><b>Architect</b></h3>
-  <p class="t p" style="left:1310px;top:1224px;color:#b5b5b5">A community of professionals moving Ghanaian A community<br>of professionals moving Ghanaian architecture forward.<br>architecture forward architecture forward.</p>
-  <a class="t s more" href="jobs.html" style="left:1313px;top:1319px;color:#1e1e1e">More +</a>
   <i class="b" style="left:795px;top:1399px;width:992px;height:2px;background:var(--bright)"></i>
 </section>
 
 <!-- Shared red column: sits behind the news and learn bands, continues into Shop and the partners row -->
-<div class="b" aria-hidden="true" style="left:928px;top:1595px;width:633px;height:1780px;background:var(--bright)"></div>
+<div class="b redcol" aria-hidden="true" style="left:928px;top:1595px;width:633px;height:1780px;background:var(--bright)"></div>
 
-<section aria-label="ASG News">
-  <div class="b" style="left:0;top:1461px;width:756px;height:207px;background:var(--peach)"></div>
-  <h2 class="t h" style="left:278px;top:1591px">ASG News</h2>
-  <div class="b" style="left:0;top:1668px;width:1920px;height:397px;background:var(--rust)"></div>
-  <span class="t" aria-hidden="true" style="left:71px;top:1713px;font-size:355px;line-height:355px;font-weight:700;letter-spacing:0;color:var(--bright);transform:scaleX(1.06);transform-origin:0 0">2</span>
-  <h3 class="t k" style="left:278px;top:1696px"><b>Updated ASG Consitution</b></h3>
-  <p class="t p" style="left:278px;top:1945px">A community of professionals moving Ghanaian A community of professionals<br>moving Ghanaian architecture forward. architecture forward.&nbsp; rward. architecture<br>forward.&nbsp; <a class="more" href="news.html" style="display:inline-block">More ++</a></p>
-  <div class="pg" style="left:1443px;top:1993px" aria-label="News 2 of 5"><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5</span><span>+</span><span>+</span></div>
+<section class="news" aria-label="ASG News">
+  <div class="news-tab">
+    <div class="b" style="left:0;top:1461px;width:756px;height:207px;background:var(--peach)"></div>
+    <h2 class="t h" style="left:278px;top:1591px">ASG News</h2>
+  </div>
+  <div class="news-band">
+    <div class="b" style="left:0;top:1668px;width:1920px;height:397px;background:var(--rust)"></div>
+    <span class="t bignum" aria-hidden="true" style="left:71px;top:1713px;font-size:355px;line-height:355px;font-weight:700;letter-spacing:0;color:var(--bright);transform:scaleX(1.06);transform-origin:0 0">2</span>
+    <h3 class="t k" style="left:278px;top:1696px"><b id="hp-news-title">Updated ASG Consitution</b></h3>
+    <p class="t p" style="left:278px;top:1945px"><span id="hp-news-summary">A community of professionals moving Ghanaian A community of professionals <br>moving Ghanaian architecture forward. architecture forward.&nbsp; rward. architecture <br>forward.&nbsp;</span> <a class="more" href="news.html" style="display:inline-block">More ++</a></p>
+    <div class="pg" style="left:1443px;top:1993px" aria-label="News 2 of 5"><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5</span><span>+</span><span>+</span></div>
+  </div>
 </section>
 
 <!-- ============ BOARD 3 ============ -->
-<section aria-label="ASG Showroom and Shop">
-  <h2 class="t h" style="left:278px;top:2119px;color:#929292">ASG Showroom</h2>
-  <p class="t k" style="left:278px;top:2228px;font-size:30px;line-height:36px;color:#a0a0a0">New arrivals:</p>
-  <p class="t" style="left:278px;top:2266px;font-size:13px;line-height:18px;font-weight:700;color:#5a5a5a;letter-spacing:-.02em">Books and literature section</p>
-  <h3 class="t k" style="left:278px;top:2302px;color:#7a7a7a"><b>Ghana Building Codes</b></h3>
-  <p class="t p" style="left:279px;top:2339px;color:#b5b5b5">A community of professionals moving Ghanaian A community<br>of professionals moving Ghanaian architecture forward.<br>architecture forward architecture forward.</p>
-  <a class="t s more" href="shop.html#books" style="left:279px;top:2449px;color:#1e1e1e">More +</a>
+<section class="sr-row" aria-label="ASG Showroom and Shop">
+  <div class="showroom">
+    <h2 class="t h" style="left:278px;top:2119px;color:#929292">ASG Showroom</h2>
+    <p class="t k na" style="left:278px;top:2228px;font-size:30px;line-height:36px;color:#a0a0a0">New arrivals:</p>
+    <p class="t nal" style="left:278px;top:2266px;font-size:13px;line-height:18px;font-weight:700;color:#5a5a5a;letter-spacing:-.02em">Books and literature section</p>
+    <h3 class="t k" style="left:278px;top:2302px;color:#7a7a7a"><b id="hp-product-title">Ghana Building Codes</b></h3>
+    <p class="t p" id="hp-product-desc" style="left:279px;top:2339px;color:#b5b5b5">A community of professionals moving Ghanaian A community <br>of professionals moving Ghanaian architecture forward. <br>architecture forward architecture forward.</p>
+    <a class="t s more" href="shop.html#books" style="left:279px;top:2449px;color:#1e1e1e">More +</a>
+  </div>
 
-  <h2 class="t h" style="left:966px;top:2119px">Shop</h2>
-  <a class="t s" href="shop.html" style="left:960px;top:2633px">Buy</a>
-  <a class="t s more" href="shop.html" style="left:1457px;top:2633px">More +</a>
+  <div class="shop">
+    <h2 class="t h" style="left:966px;top:2119px">Shop</h2>
+    <div class="shop-links">
+      <a class="t s" href="shop.html" style="left:960px;top:2633px">Buy</a>
+      <a class="t s more" href="shop.html" style="left:1457px;top:2633px">More +</a>
+    </div>
+  </div>
 </section>
 
-<section aria-label="Learn">
-  <div class="b" style="left:226px;top:2594px;width:530px;height:92px;background:var(--rust)"></div>
-  <h2 class="t h" style="left:278px;top:2632px">Learn</h2>
-  <div class="b" style="left:0;top:2684px;width:1920px;height:350px;background:var(--rust)"></div>
-  <h3 class="t k" style="left:278px;top:2718px"><b>Upcoming CPD</b></h3>
-  <i class="b" style="left:276px;top:2767px;width:479px;height:2px;background:var(--bright)"></i>
-  <h3 class="t m" style="left:278px;top:2790px">The Role of AI in architecture</h3>
-  <p class="t p" style="left:278px;top:2842px">A community of professionals moving Ghanaian A community of professionals<br>moving Ghanaian architecture forward. architecture forward.&nbsp; rward. architecture<br>forward.</p>
-  <p class="t p" style="left:960px;top:2789px">Ghanaian A community of professionals moving Ghanaian architecture forward.<br>moving Ghanaian architecture forward.</p>
-  <p class="t p" style="left:960px;top:2867px">A community of professionals moving Ghanaian A community of professionals<br>moving Ghanaian architecture forward. architecture forward.&nbsp; rward. architecture<br>forward.</p>
+<section class="learn" aria-label="Learn">
+  <div class="learn-tab">
+    <div class="b" style="left:226px;top:2594px;width:530px;height:92px;background:var(--rust)"></div>
+    <h2 class="t h" style="left:278px;top:2632px">Learn</h2>
+  </div>
+  <div class="learn-band">
+    <div class="b" style="left:0;top:2684px;width:1920px;height:350px;background:var(--rust)"></div>
+    <h3 class="t k" style="left:278px;top:2718px"><b>Upcoming CPD</b></h3>
+    <i class="b" style="left:276px;top:2767px;width:479px;height:2px;background:var(--bright)"></i>
+    <h3 class="t m" style="left:278px;top:2790px">The Role of AI in architecture</h3>
+    <p class="t p" style="left:278px;top:2842px">A community of professionals moving Ghanaian A community of professionals <br>moving Ghanaian architecture forward. architecture forward.&nbsp; rward. architecture <br>forward.</p>
+    <div class="learn-col">
+      <p class="t p" style="left:960px;top:2789px">Ghanaian A community of professionals moving Ghanaian architecture forward. <br>moving Ghanaian architecture forward.</p>
+      <p class="t p" style="left:960px;top:2867px">A community of professionals moving Ghanaian A community of professionals <br>moving Ghanaian architecture forward. architecture forward.&nbsp; rward. architecture <br>forward.</p>
+    </div>
+  </div>
 </section>
 
 <!-- ============ BOARD 4 ============ -->
-<section aria-label="ASG Partners">
+<section class="partners" aria-label="ASG Partners">
   <h2 class="t h" style="left:278px;top:3070px;color:#929292">ASG Partners</h2>
-  <a class="b" href="about.html#partners" style="left:226px;top:3176px;width:207px;height:199px;background:var(--tile)"></a>
-  <a class="b" href="about.html#partners" style="left:454px;top:3176px;width:207px;height:199px;background:var(--tile)"></a>
-  <a class="b" href="about.html#partners" style="left:682px;top:3176px;width:205px;height:199px;background:var(--tile)"></a>
-  <p class="t" style="left:246px;top:3312px;font-size:25px;line-height:24px;font-weight:700;letter-spacing:-.03em">Molders<br>Group</p>
-  <p class="t" style="left:472px;top:3312px;font-size:25px;line-height:24px;font-weight:700;letter-spacing:-.03em">Architecture<br>Alliance</p>
-  <p class="t" style="left:702px;top:3312px;font-size:25px;line-height:24px;font-weight:700;letter-spacing:-.03em">MultiBuild<br>Limited</p>
+  <div class="tiles">
+    <a class="ptn" href="about.html#partners"><span class="b" style="left:226px;top:3176px;width:207px;height:199px;background:var(--tile)"></span><p class="t" id="hp-partner-0" style="left:246px;top:3312px;font-size:25px;line-height:24px;font-weight:700;letter-spacing:-.03em">Molders <br>Group</p></a>
+    <a class="ptn" href="about.html#partners"><span class="b" style="left:454px;top:3176px;width:207px;height:199px;background:var(--tile)"></span><p class="t" id="hp-partner-1" style="left:472px;top:3312px;font-size:25px;line-height:24px;font-weight:700;letter-spacing:-.03em">Architecture <br>Alliance</p></a>
+    <a class="ptn" href="about.html#partners"><span class="b" style="left:682px;top:3176px;width:205px;height:199px;background:var(--tile)"></span><p class="t" id="hp-partner-2" style="left:702px;top:3312px;font-size:25px;line-height:24px;font-weight:700;letter-spacing:-.03em">MultiBuild <br>Limited</p></a>
+  </div>
 </section>
 
-<section aria-label="Get in touch">
-  <div class="b" style="left:226px;top:3421px;width:704px;height:479px;background:var(--peach)"></div>
-  <div class="b" style="left:929px;top:3512px;width:633px;height:388px;background:var(--peach)"></div>
-  <h2 class="t h" style="left:278px;top:3458px">Get in Touch With Us</h2>
+<section class="git" aria-label="Get in touch">
+  <div class="git-head">
+    <div class="b" style="left:226px;top:3421px;width:704px;height:479px;background:var(--peach)"></div>
+    <div class="b" style="left:929px;top:3512px;width:633px;height:388px;background:var(--peach)"></div>
+    <h2 class="t h" style="left:278px;top:3458px">Get in Touch With Us</h2>
+  </div>
 
-  <form action="#" onsubmit="event.preventDefault()">
-    <h3 class="t k" style="left:278px;top:3572px"><b>Drop us a comment or feedback</b></h3>
-    <label class="t u" for="f-name" style="left:279px;top:3625px">Name:</label>
-    <input class="in" id="f-name" type="text" style="left:334px;top:3628px;width:494px">
-    <label class="t u" for="f-email" style="left:278px;top:3662px">Email address:</label>
-    <input class="in" id="f-email" type="email" style="left:391px;top:3664px;width:437px">
-    <textarea class="ta" aria-label="Your comment" style="left:278px;top:3700px;width:550px;height:130px"></textarea>
-    <button class="t u" type="reset" style="left:279px;top:3841px">Start over</button>
-    <button class="t u" type="submit" style="left:791px;top:3841px">Send</button>
-  </form>
+  <div class="git-forms">
+    <form class="cform" action="#" onsubmit="event.preventDefault()">
+      <h3 class="t k" style="left:278px;top:3572px"><b>Drop us a comment or feedback</b></h3>
+      <label class="t u" for="f-name" style="left:279px;top:3625px">Name:</label>
+      <input class="in" id="f-name" type="text" style="left:334px;top:3628px;width:494px">
+      <label class="t u" for="f-email" style="left:278px;top:3662px">Email address:</label>
+      <input class="in" id="f-email" type="email" style="left:391px;top:3664px;width:437px">
+      <textarea class="ta" aria-label="Your comment" style="left:278px;top:3700px;width:550px;height:130px"></textarea>
+      <button class="t u" type="reset" style="left:279px;top:3841px">Start over</button>
+      <button class="t u" type="submit" style="left:791px;top:3841px">Send</button>
+    </form>
 
-  <form action="#" onsubmit="event.preventDefault()">
-    <h3 class="t k" style="left:960px;top:3572px"><b>Sign up for our newsletter</b></h3>
-    <p class="t u" style="left:960px;top:3623px">A community of professionals moving Ghanaian</p>
-    <input class="in" type="email" aria-label="Email address for newsletter" style="left:960px;top:3664px;width:360px">
-    <button class="t u" type="submit" style="left:1263px;top:3702px;font-size:20px">Sign up</button>
-  </form>
+    <form class="nform" action="#" onsubmit="event.preventDefault()">
+      <h3 class="t k" style="left:960px;top:3572px"><b>Sign up for our newsletter</b></h3>
+      <p class="t u" style="left:960px;top:3623px">A community of professionals moving Ghanaian</p>
+      <input class="in" type="email" aria-label="Email address for newsletter" style="left:960px;top:3664px;width:360px">
+      <button class="t u" type="submit" style="left:1263px;top:3702px;font-size:20px">Sign up</button>
+    </form>
+  </div>
 </section>
 
-<footer>
-  <div class="b" style="left:0;top:3900px;width:1920px;height:278px;background:var(--bright)"></div>
-  <a class="logo inv" href="index.html" aria-label="Architectural Society of Ghana, home" style="left:278px;top:3954px">
-    <i class="a"></i><i class="l"></i><i class="c"></i>
-    <span class="w1" style="left:65px;top:41.5px">ARCHITECTURAL</span>
-    <span class="w2" style="left:65px;top:56.5px">SOCIETY</span>
-    <span style="left:122px;top:56.5px">OF</span>
-    <span style="left:65px;top:71.5px">GHANA</span>
-    <span class="pl"></span>
-  </a>
+<footer class="ft">
+  <div class="ft-main">
+    <div class="b" style="left:0;top:3900px;width:1920px;height:278px;background:var(--bright)"></div>
+    <a class="logo inv" href="index.html" aria-label="Architectural Society of Ghana, home" style="left:278px;top:3954px">
+      <i class="a"></i><i class="l"></i><i class="c"></i>
+      <span class="w1" style="left:65px;top:41.5px">ARCHITECTURAL</span>
+      <span class="w2" style="left:65px;top:56.5px">SOCIETY</span>
+      <span style="left:122px;top:56.5px">OF</span>
+      <span style="left:65px;top:71.5px">GHANA</span>
+      <span class="pl"></span>
+    </a>
 
-  <nav class="fl" aria-label="Footer" style="left:644px;top:3951px">
-    <a href="about.html">About ASG</a><a href="events.html">Events</a><a href="learn.html">Learn</a><a href="contact.html">Get in touch</a><a href="shop.html">Shop</a>
-  </nav>
-  <i class="sep r" style="left:743px;top:3956px;background:#f28a6a"></i>
-  <div class="fl" style="left:819px;top:3951px">
-    <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a><a href="https://www.youtube.com/" target="_blank" rel="noopener">Youtube</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener" style="margin-left:-2px">LinkedIn</a>
+    <nav class="fl fnav" aria-label="Footer" style="left:644px;top:3951px">
+      <a href="about.html">About ASG</a><a href="events.html">Events</a><a href="learn.html">Learn</a><a href="contact.html">Get in touch</a><a href="shop.html">Shop</a>
+    </nav>
+    <i class="sep r" style="left:743px;top:3956px;background:#f28a6a"></i>
+    <div class="fl fsoc" id="footer-socials" style="left:819px;top:3951px">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a><a href="https://www.youtube.com/" target="_blank" rel="noopener">Youtube</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener" style="margin-left:-2px">LinkedIn</a>
+    </div>
+    <i class="sep r" style="left:918px;top:3995px;background:#f28a6a"></i>
+    <div class="fl fcon" style="left:994px;top:3951px">
+      <a id="footer-email" href="mailto:info@asg.com">info@asg.com</a><a id="footer-phone" href="tel:+2330568769823">+233 056 876 9823</a>
+    </div>
+    <i class="sep r" style="left:1093px;top:3995px;background:#f28a6a"></i>
+    <p class="t faddr" id="footer-address" style="left:992px;top:4032px;font-size:19px;line-height:27px;font-weight:400">No. 9 Atsuru street</p>
   </div>
-  <i class="sep r" style="left:918px;top:3995px;background:#f28a6a"></i>
-  <div class="fl" style="left:994px;top:3951px">
-    <a href="mailto:info@asg.com">info@asg.com</a><a href="tel:+2330568769823">+233 056 876 9823</a>
-  </div>
-  <i class="sep r" style="left:1093px;top:3995px;background:#f28a6a"></i>
-  <p class="t" style="left:992px;top:4032px;font-size:19px;line-height:27px;font-weight:400">No. 9 Atsuru street</p>
 
-  <div class="b" style="left:0;top:4178px;width:1920px;height:78px;background:var(--rust)"></div>
-  <p class="t u" style="left:278px;top:4209px">All rights reserved ASG Media 2026</p>
-  <a class="t u" href="privacy.html" style="left:642px;top:4209px">Privacy Policy</a><i class="sep w" style="left:753px;top:4214px"></i>
-  <a class="t u" href="cookies.html" style="left:763px;top:4209px">Cookie Policy</a><i class="sep w" style="left:873px;top:4214px"></i>
-  <a class="t u" href="ai-policy.html" style="left:883px;top:4209px">AI Policy</a>
+  <div class="ft-bar">
+    <div class="b" style="left:0;top:4178px;width:1920px;height:78px;background:var(--rust)"></div>
+    <p class="t u fcopy" style="left:278px;top:4209px">All rights reserved ASG Media 2026</p>
+    <a class="t u fpol" href="privacy.html" style="left:642px;top:4209px">Privacy Policy</a><i class="sep w" style="left:753px;top:4214px"></i>
+    <a class="t u fpol" href="cookies.html" style="left:763px;top:4209px">Cookie Policy</a><i class="sep w" style="left:873px;top:4214px"></i>
+    <a class="t u fpol" href="ai-policy.html" style="left:883px;top:4209px">AI Policy</a>
+  </div>
 </footer>
 
 </div>
 
-<script>
-(function(){
-  var page=document.getElementById('page'),W=1920,H=4256,zoomOK=CSS.supports('zoom','1');
-  function fit(){
-    var s=document.documentElement.clientWidth/W;
-    if(zoomOK){page.style.zoom=s}
-    else{page.style.transform='scale('+s+')';document.body.style.height=(H*s)+'px'}
-  }
-  fit();addEventListener('resize',fit);addEventListener('load',fit);
-})();
-</script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/sanity.js"></script><script src="assets/js/cms.js"></script>
 </body>
 </html>
